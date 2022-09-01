@@ -1,0 +1,302 @@
+.fontAndColors {
+    background-color: #161616;
+    background-color: #202020;
+    background-color: #313131;
+    background-color: #32AC1E;
+    background-color: #0EF1FF;
+    color: #fff;
+    color: #9C9FAE;
+    color: #2D62A4;
+    color: #348339;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+* {
+    box-sizing: border-box !important;
+}
+body {
+    background-color: #161616 !important;
+}
+.sidebar { 
+    margin: 0;
+    padding: 0; 
+    width: 4.5rem;
+    background-color: #202020;
+    position: fixed;
+    height: 100% ;
+    overflow: auto;
+}
+.sidebar a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+.sidebar a i {
+    font-size: 20pt !important;
+}
+.sidebar a i:hover {
+    color: #32AC1E;
+    transition: 0.8s;
+}
+.sidebar a .fa-circle {
+    font-size: 20pt !important;
+    border-radius: 50%;
+}
+.sidebar a .fa-circle:hover {
+    transition: 0.8s;
+}
+.sidebar .circleIcon, .sidebar a {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    color: transparent;
+}
+.sidebar a i {
+    border: 0 !important;
+    color: #fff !important;
+}
+.sidebar a i:hover {
+    color: #32AC1E !important;
+    transition: 0.8s !important;
+}
+.content {
+    padding: 2rem 2rem 2rem 6.5rem;
+}
+.upperContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.upperContainer .firstContainer {
+    display: flex;
+    align-items: center;
+}
+.upperContainer .firstContainer .settings {
+    margin-right: 2rem;
+}
+.upperContainer .firstContainer .settings i {
+    color:#9C9FAE;
+    background-color: #202020;
+    border-radius: 20%;
+    padding: 0.75rem;
+}
+.upperContainer .firstContainer .settings i:hover {
+    color: #fff;
+    background-color: #313131;
+    transition: 0.8s;
+}
+.upperContainer .firstContainer form i {    
+    margin-right: 0.5rem;
+    color: #9C9FAE;
+} 
+.upperContainer .firstContainer form i:hover {    
+    cursor: pointer;
+}
+.upperContainer .firstContainer form input {
+    background-color: transparent;
+    border: 1px solid #161616;
+}
+.upperContainer .firstContainer form input::placeholder {
+    color: #9C9FAE;
+}
+.upperContainer .secondContainer { 
+    display: inline-flex;
+    align-items: center;
+}
+.upperContainer .secondContainer .iconsContainer a i {
+    padding: 0.75rem;
+    margin-left: 0.5rem;
+    color: #9C9FAE;
+    background-color: #202020;
+}
+.upperContainer .secondContainer .iconsContainer a i:hover {
+    color: #fff;
+    background-color: #313131;
+    transition: 0.8s;
+}
+.upperContainer .secondContainer .profile {
+    margin: 0;
+    padding: 0;
+}
+.upperContainer .secondContainer .profile .profileImg  {
+    width: 2.5rem;
+    margin-left: 0.75rem;
+}
+.upperContainer .secondContainer .profile .profileImg:hover {
+    cursor: pointer;
+}
+.middleUpperContainer {
+    margin-bottom: 1rem;
+}
+.middleUpperContainer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    min-width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+.middleUpperContainer .container .firstContainer h1 { 
+    background: -webkit-linear-gradient(left, #32AC1E, #0EF1FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+.middleUpperContainer .container .firstContainer p {
+    color: #9C9FAE;
+    margin-bottom: 0;
+    font-weight: 500 !important;
+}
+.middleUpperContainer .container .secondContainer button {
+    color: #fff;
+    background-color: #32AC1E;
+    border: 0px;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+.middleUpperContainer .container .secondContainer button:hover {
+    background-color: #3ac924;
+    transition: 0.8s;
+}
+.middleBottomContainer {
+    margin-bottom: 2rem;
+}
+.row {
+    --bs-gutter-x: 0 !important;
+} 
+.middleBottomContainer .container {
+    background-color: #202020;
+    min-width: 15rem !important;
+    margin-right: 0;
+    margin-left: 0;
+}
+.middleBottomContainer .container .firstContainer {
+    padding: 1rem;
+    color: #9C9FAE;
+}
+.middleBottomContainer .container .firstContainer img {
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+.middleBottomContainer .container .firstContainer h3 {
+    margin: 0;
+}
+.middleBottomContainer .container .secondContainer {    
+    color: #9C9FAE;
+    background-color: #313131;
+    padding: 1rem;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    text-decoration: none;
+}
+.middleBottomContainer .container .secondContainer:hover {
+    color: #fff;
+    background-color: #32AC1E;
+    cursor: pointer;
+}
+.middleBottomContainer .container .secondContainer h6 {
+    display: inline;
+    margin: 0;
+    font-weight: 500 !important;
+}
+.middleBottomContainer .container .secondContainer i {
+    margin: 0;
+}
+.bottomContainer .learningCotaniner {  
+    color: #9C9FAE;
+    background-color: #202020;
+    padding: 2rem !important;
+}
+.bottomContainer .learningCotaniner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.bottomContainer .learningCotaniner .container h4 {
+    font-size: 20pt !important;
+    margin-bottom: 0 !important;
+}
+.bottomContainer .learningCotaniner .container div {
+    display: flex;
+}
+.bottomContainer .learningCotaniner .container div form {
+    margin-right: 2rem;
+}
+.bottomContainer .learningCotaniner .container div form label {
+    display: block !important;
+    font-size: 12pt !important;
+    font-weight: 500 !important;
+    margin-bottom: 1.5rem;
+}
+.bottomContainer .learningCotaniner .container div form select {
+    display: block !important;
+    color: #5e5e5e;
+    background-color: transparent;
+    border: 0;
+    font-size: 10pt !important;
+    font-weight: 500 !important;
+}
+.bottomContainer .learningCotaniner .container div div h5  {
+    font-size: 12pt !important;
+    font-weight: 500 !important;
+    margin: 0;
+}
+.bottomContainer .learningCotaniner .container div div h5 {
+}
+.bottomContainer .learningCotaniner .container div div h5 span {
+    color: #32AC1E;
+    font-size: 18pt !important;
+    font-weight: 600 !important;
+    display: block;
+}
+.bottomContainer .transferContainer .container div {
+    background-color: #202020;
+}
+@media screen and (max-width: 992px) {
+    .sidebar {
+      width: 100%;
+      height: 4.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+    }
+    .sidebar a {
+        margin: 0 3rem;
+    }
+    .content {
+        margin: 6.5rem 2rem 2rem 2rem;
+        padding: 0.25rem 0;
+    }
+    .upperContainer .secondContainer .profile .profileImg  {
+        width: 2.5rem;
+        margin-left: 0.75rem;
+    }
+    .bottomContainer .learningCotaniner {
+        margin-bottom: 1.5rem;
+    }
+    .bottomContainer .transferContainer .container {
+        min-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .middleBottomContainer .container {
+        min-width: 100% !important;
+    }
+    .bottomContainer {
+        width: 100% !important;
+        display: inline !important;
+    }
+}
+@media screen and (max-width: 400px) {
+.sidebar a {
+    text-align: center;
+    float: none;
+}
+}
