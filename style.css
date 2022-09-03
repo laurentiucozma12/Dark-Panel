@@ -209,12 +209,17 @@ body {
     color: #9C9FAE;
     background-color: #202020;
     padding: 2rem !important;
+    margin-bottom: 2rem;
+        
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
 }
 .bottomContainer .learningCotaniner .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .bottomContainer .learningCotaniner .container h4 {
     font-size: 20pt !important;
@@ -245,16 +250,68 @@ body {
     font-weight: 500 !important;
     margin: 0;
 }
-.bottomContainer .learningCotaniner .container div div h5 {
-}
 .bottomContainer .learningCotaniner .container div div h5 span {
     color: #32AC1E;
     font-size: 18pt !important;
     font-weight: 600 !important;
-    display: block;
 }
-.bottomContainer .transferContainer .container div {
+.bottomContainer .chartBox {
+    flex-grow : 1;
+}
+.bottomContainer .transferContainer {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.bottomContainer .transferContainer .container {
+    margin-bottom: 2rem;
+    min-width: 100% !important;
+}
+.bottomContainer .transferContainer .container .smallContainerOne {
+    width: 9rem !important;
+    height: 9rem !important;
+    color: #9C9FAE;
     background-color: #202020;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.bottomContainer .transferContainer .container .smallContainerOne .smallContainerTwo a {
+    text-decoration: none;
+}
+.bottomContainer .transferContainer .container .smallContainerOne .smallContainerTwo a i {
+    color: #0EF1FF !important;
+    font-size: 25pt !important;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.bottomContainer .transferContainer .container .smallContainerOne .smallContainerTwo a i:hover {
+    color: #c2fcff !important;
+    transition: 0.8s;
+}
+.bottomContainer .transferContainer .container .smallContainerOne .smallContainerTwo h3 {
+    margin: 0;
+}
+.bottomContainer .transferContainer .btnContainer {    
+    width: 100%;
+}
+.bottomContainer .transferContainer .btnContainer button {
+    width: 100%;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #fff;
+    background-color: #32AC1E;
+    padding: 1rem 0;
+    border: 0;
+}
+.bottomContainer .transferContainer .btnContainer button:hover {
+    background-color: #3ac924;
+    transition: 0.8s;
 }
 @media screen and (max-width: 992px) {
     .sidebar {
@@ -284,8 +341,13 @@ body {
         min-width: 100% !important;
     }
 }
+@media screen and (max-width: 768px) {
 
+}
 @media screen and (max-width: 576px) {
+    .content {
+        margin: 6.5rem 0 0 0;
+    }
     .middleBottomContainer .container {
         min-width: 100% !important;
     }

@@ -116,8 +116,9 @@
         </div>   
     </div>
     
-    <div class="bottomContainer row justify-content-between d-lg-flex d-md-inline d-sm-inline d-inline gap-lg-4">
-        <div class="learningCotaniner col-12 col-lg-7 col-md-12 col-sm-12">
+    <!-- graph section  -->
+    <div class="bottomContainer row d-xl-flex d-lg-block d-md-block d-sm-block d-block justify-content-between">
+        <div class="learningCotaniner col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12 gap-xp-4">
             <div class="container">
                 <h4>Learning Curve</h4>
                 <div>
@@ -138,16 +139,49 @@
                     </div>
                 </div>                                        
             </div>             
-            <canvas id="myChart" width="400" height="200"></canvas>             
+                <canvas id="myChart" class="chartBox" width="400" height="200"></canvas>  
         </div>   
-        <div class="transferContainer col-12 col-lg-4 col-md-12 col-sm-12">
-            <div class="container row justify-content-between gap-4">
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12">1</div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12">1</div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12">1</div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12">1</div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12">1</div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12">1</div>
+        <div class="transferContainer col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="container row d-flex justify-content-between gap-3">                
+                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="smallContainerTwo">
+                        <a href=""><i class="fa-regular fa-clone"></i></a>
+                        <h5>Courses</h5>
+                    </div>
+                </div>
+                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="smallContainerTwo">
+                        <a href=""><i class="fa-regular fa-star"></i></a>
+                        <h5>Favorites</h5>
+                    </div>
+                </div>
+                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="smallContainerTwo">
+                        <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+                        <h5>Explore</h5>
+                    </div>
+                </div>
+                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="smallContainerTwo">
+                        <a href=""><i class="fa-solid fa-bell"></i></a>
+                        <h5>Notifications</h5>
+                    </div>
+                </div>
+                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="smallContainerTwo">
+                        <a href=""><i class="fa-solid fa-triangle-exclamation"></i></a>
+                        <h5>Alert</h5>
+                    </div>
+                </div>
+                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="smallContainerTwo">
+                        <a href=""><i class="fa-solid fa-lightbulb"></i></a>
+                        <h5>Tips</h5>
+                    </div>
+                </div> 
+            </div> 
+            <div class="btnContainer">
+                <button class="">Transfer</button></div>
             </div>
         </div> 
     </div>
