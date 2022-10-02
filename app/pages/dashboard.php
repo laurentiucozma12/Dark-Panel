@@ -1,4 +1,5 @@
-<?php include 'connect.php';?>
+<?php include '../../app/config/config.php';?>
+<?php include '../../app/config/connect.php';?>
 
 <!DOCTYPE html>
 <html>
@@ -6,11 +7,11 @@
     <meta charset="utf-8">
     <title>Dark Panel</title>
     <!-- CSS -->
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="font.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB; ?>/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
+    <link href="<?php echo WEB; ?>/assets/css/bootstrap-v5.0.2.css" rel="stylesheet"></head>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,7 @@
                 <a href=""><i class="fa-regular fa-bell"></i></a>
             </div>            
             <div class="profile">
-                <img src="img/avatar.png" alt="profile img" class="profileImg">
+                <img src="<?php echo WEB; ?>/assets/img/avatar.png" alt="profile img" class="profileImg">
             </div>
         </div>  
     </div>    
@@ -66,7 +67,7 @@
     <div class="middleBottomContainer row d-flex justify-content-lg-between justify-content-md-around gap-lg-4 gap-md-4 gap-sm-4 gap-4">
         <div class="container col-lg-2 col-md-5 col-sm-12 col-12">
             <div class="firstContainer">
-                <img src="img/avatar.png" alt="profile img" class="profileImg">
+                <img src="<?php echo WEB; ?>/assets/img/avatar.png" alt="profile img" class="profileImg">
                 <h5>PHP Developer <br><span>124 Videos</span></h5>
             </div>
             <a href ="" class="secondContainer">
@@ -76,7 +77,7 @@
         </div>  
         <div class="container col-lg-2 col-md-5 col-sm-12 col-12">
             <div class="firstContainer">
-                <img src="img/avatar.png" alt="profile img" class="profileImg">
+                <img src="<?php echo WEB; ?>/assets/img/avatar.png" alt="profile img" class="profileImg">
                 <h5>Python Programming <br><span>234 Videos</span></h5>
             </div>
             <a href ="" class="secondContainer">
@@ -86,7 +87,7 @@
         </div>   
         <div class="container col-lg-2 col-md-5 col-sm-12 col-12">
             <div class="firstContainer">
-                <img src="img/avatar.png" alt="profile img" class="profileImg">
+                <img src="<?php echo WEB; ?>/assets/img/avatar.png" alt="profile img" class="profileImg">
                 <h5>Figma Design <br><span>87 Videos</span></h5>
             </div>
             <a href =""  class="secondContainer">
@@ -96,7 +97,7 @@
         </div>   
         <div class="container col-lg-2 col-md-5 col-sm-12 col-12">
             <div class="firstContainer">
-                <img src="img/avatar.png" alt="profile img" class="profileImg">
+                <img src="<?php echo WEB; ?>/assets/img/avatar.png" alt="profile img" class="profileImg">
                 <h5>UI with Sketch <br><span>29 Videos</span></h5>
             </div>
             <a href =""  class="secondContainer">
@@ -106,7 +107,7 @@
         </div>   
         <div class="container col-lg-2 col-md-5 col-sm-12 col-12">
             <div class="firstContainer">
-                <img src="img/avatar.png" alt="profile img" class="profileImg">
+                <img src="<?php echo WEB; ?>/assets/img/avatar.png" alt="profile img" class="profileImg">
                 <h5>Gruntt <br><span>18 Videos</span></h5>
             </div>
             <a href =""  class="secondContainer">
@@ -191,15 +192,15 @@
     <!-- <div class="copyright">© 2022 Copyright of Laurentiu Ioan Cozma</div> -->
 </footer>
 <!-- Ajax jQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="<?php echo WEB; ?>/assets/js/jQuery-v3.6.0.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="<?php echo WEB; ?>/assets/js/bootstrap-v5.0.2.js"></script>
 
 <!-- ChartJs -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="<?php echo WEB; ?>/assets/js/chartJs-v3.9.1.js"></script>
 
-<script src="functions.js"></script>
+<script src="<?php echo WEB; ?>/assets/js/functions.js"></script>
 
 </body>
 </html>
