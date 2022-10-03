@@ -1,26 +1,28 @@
-.fontAndColors {
-    background-color: #161616;
-    background-color: #202020;
-    background-color: #313131;
-    background-color: #32AC1E;
-    background-color: #0EF1FF;
-    color: #fff;
-    color: #9C9FAE;
-    color: #2D62A4;
-    color: #348339;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+:root {
+    --dark: #161616;
+    --dark-gray: #202020;
+    --gray: #313131;
+    --light-gray-1: #5e5e5e;
+    --light-gray-2: #9C9FAE;
+    --light-gray-3: #c2fcff;
+    --light-blue: #0EF1FF;
+    --light-green: #32AC1E;
+    --light-green-hover: #3ac924;
 }
 * {
     box-sizing: border-box !important;
 }
 body {
-    background-color: #161616 !important;
+    background-color: var(--dark) !important;
+    padding: 0;
+    margin: 0;
 }
+/* Sidebar */
 .sidebar { 
     margin: 0;
     padding: 0; 
     width: 4.5rem;
-    background-color: #202020;
+    background-color: var(--dark-gray);
     position: fixed;
     height: 100% ;
     overflow: auto;
@@ -29,13 +31,13 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 .sidebar a i {
     font-size: 20pt !important;
 }
 .sidebar a i:hover {
-    color: #32AC1E;
+    color: var(--light-green);
     transition: 0.8s;
 }
 .sidebar a .fa-circle {
@@ -53,51 +55,44 @@ body {
 }
 .sidebar a i {
     border: 0 !important;
-    color: #fff !important;
+    color: white !important;
 }
 .sidebar a i:hover {
-    color: #32AC1E !important;
+    color: var(--light-green) !important;
     transition: 0.8s !important;
 }
+/* Content */
 .content {
-    padding: 2rem 2rem 2rem 6.5rem;
+    padding: 0 2rem 2rem 2rem;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+    margin-left: 70px !important;
 }
 .upperContainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    padding-top: 2rem;
 }
 .upperContainer .firstContainer {
     display: flex;
     align-items: center;
 }
-.upperContainer .firstContainer .settings {
-    margin-right: 2rem;
-}
-.upperContainer .firstContainer .settings i {
-    color:#9C9FAE;
-    background-color: #202020;
-    border-radius: 20%;
-    padding: 0.75rem;
-}
-.upperContainer .firstContainer .settings i:hover {
-    color: #fff;
-    background-color: #313131;
-    transition: 0.8s;
-}
 .upperContainer .firstContainer form i {    
     margin-right: 0.5rem;
-    color: #9C9FAE;
+    color: var(--light-gray-2);
 } 
 .upperContainer .firstContainer form i:hover {    
     cursor: pointer;
 }
 .upperContainer .firstContainer form input {
     background-color: transparent;
-    border: 1px solid #161616;
+    border: 1px solid var(--dark);
 }
 .upperContainer .firstContainer form input::placeholder {
-    color: #9C9FAE;
+    color: var(--light-gray-2);
 }
 .upperContainer .secondContainer { 
     display: inline-flex;
@@ -106,12 +101,12 @@ body {
 .upperContainer .secondContainer .iconsContainer a i {
     padding: 0.75rem;
     margin-left: 0.5rem;
-    color: #9C9FAE;
-    background-color: #202020;
+    color: var(--light-gray-2);
+    background-color: var(--dark-gray);
 }
 .upperContainer .secondContainer .iconsContainer a i:hover {
-    color: #fff;
-    background-color: #313131;
+    color: white;
+    background-color: var(--gray);
     transition: 0.8s;
 }
 .upperContainer .secondContainer .profile {
@@ -137,25 +132,25 @@ body {
     padding: 0;
 }
 .middleUpperContainer .container .firstContainer h1 { 
-    background: -webkit-linear-gradient(left, #32AC1E, #0EF1FF);
+    background: -webkit-linear-gradient(left, var(--light-green), var(--light-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
 }
 .middleUpperContainer .container .firstContainer p {
-    color: #9C9FAE;
+    color: var(--light-gray-2);
     margin-bottom: 0;
     font-weight: 500 !important;
 }
 .middleUpperContainer .container .secondContainer button {
-    color: #fff;
-    background-color: #32AC1E;
+    color: white;
+    background-color: var(--light-green);
     border: 0px;
     font-weight: 600;
     padding: 0.75rem 1rem;
 }
 .middleUpperContainer .container .secondContainer button:hover {
-    background-color: #3ac924;
+    background-color: var(--light-green-hover);
     transition: 0.8s;
 }
 .middleBottomContainer {
@@ -165,14 +160,14 @@ body {
     --bs-gutter-x: 0 !important;
 } 
 .middleBottomContainer .container {
-    background-color: #202020;
+    background-color: var(--dark-gray);
     min-width: 15rem !important;
     margin-right: 0;
     margin-left: 0;
 }
 .middleBottomContainer .container .firstContainer {
     padding: 1rem;
-    color: #9C9FAE;
+    color: var(--light-gray-2);
 }
 .middleBottomContainer .container .firstContainer img {
     width: 3rem;
@@ -182,8 +177,8 @@ body {
     margin: 0;
 }
 .middleBottomContainer .container .secondContainer {    
-    color: #9C9FAE;
-    background-color: #313131;
+    color: var(--light-gray-2);
+    background-color: var(--gray);
     padding: 1rem;
     height: fit-content;
     display: flex;
@@ -193,8 +188,9 @@ body {
     text-decoration: none;
 }
 .middleBottomContainer .container .secondContainer:hover {
-    color: #fff;
-    background-color: #32AC1E;
+    color: white;
+    background-color: var(--light-green);
+    transition: 0.8s;
     cursor: pointer;
 }
 .middleBottomContainer .container .secondContainer h6 {
@@ -206,8 +202,8 @@ body {
     margin: 0;
 }
 .bottomContainer .learningCotaniner {  
-    color: #9C9FAE;
-    background-color: #202020;
+    color: var(--light-gray-2);
+    background-color: var(--dark-gray);
     padding: 2rem !important;
     margin-bottom: 2rem;
         
@@ -239,7 +235,7 @@ body {
 }
 .bottomContainer .learningCotaniner .container div form select {
     display: block !important;
-    color: #5e5e5e;
+    color: var(--light-gray-1);
     background-color: transparent;
     border: 0;
     font-size: 10pt !important;
@@ -251,7 +247,7 @@ body {
     margin: 0;
 }
 .bottomContainer .learningCotaniner .container div div h5 span {
-    color: #32AC1E;
+    color: var(--light-green);
     font-size: 18pt !important;
     font-weight: 600 !important;
 }
@@ -272,8 +268,8 @@ body {
 .bottomContainer .transferContainer .container .smallContainerOne {
     width: 9rem !important;
     height: 9rem !important;
-    color: #9C9FAE;
-    background-color: #202020;
+    color: var(--light-gray-2);
+    background-color: var(--dark-gray);
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -284,14 +280,14 @@ body {
     text-decoration: none;
 }
 .bottomContainer .transferContainer .container .smallContainerOne .smallContainerTwo a i {
-    color: #0EF1FF !important;
+    color: var(--light-blue) !important;
     font-size: 25pt !important;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
 }
 .bottomContainer .transferContainer .container .smallContainerOne .smallContainerTwo a i:hover {
-    color: #c2fcff !important;
+    color: var(--light-gray-3) !important;
     transition: 0.8s;
 }
 .bottomContainer .transferContainer .container .smallContainerOne .smallContainerTwo h3 {
@@ -304,14 +300,19 @@ body {
     width: 100%;
     font-size: 12pt;
     font-weight: 500;
-    color: #fff;
-    background-color: #32AC1E;
+    color: white;
+    background-color: var(--light-green);
     padding: 1rem 0;
     border: 0;
 }
 .bottomContainer .transferContainer .btnContainer button:hover {
-    background-color: #3ac924;
+    background-color: var(--light-green-hover);
     transition: 0.8s;
+}
+@media screen and (max-width: 1199px) {
+    .bottomContainer .transferContainer .btnContainer {    
+        margin-bottom: 2rem;
+    }
 }
 @media screen and (max-width: 992px) {
     .sidebar {
@@ -327,7 +328,7 @@ body {
         margin: 0 3rem;
     }
     .content {
-        margin: 6.5rem 2rem 2rem 2rem;
+        margin: 4rem 2rem 2rem 2rem !important;
         padding: 0.25rem 0;
     }
     .upperContainer .secondContainer .profile .profileImg  {
@@ -345,8 +346,13 @@ body {
 
 }
 @media screen and (max-width: 576px) {
+    .sidebar {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
     .content {
-        margin: 6.5rem 0 0 0;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
     }
     .middleBottomContainer .container {
         min-width: 100% !important;
@@ -355,10 +361,7 @@ body {
         width: 100% !important;
         display: inline !important;
     }
-}
-@media screen and (max-width: 400px) {
-.sidebar a {
-    text-align: center;
-    float: none;
-}
+    .bottomContainer .transferContainer .btnContainer {    
+        margin-bottom: 1rem;
+    }
 }

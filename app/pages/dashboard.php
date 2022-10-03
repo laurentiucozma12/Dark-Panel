@@ -23,21 +23,25 @@
 </head>
 <body>
 <main>
+<!-- Sidebar -->
 <div class="sidebar">
-    <a href="dashboard.php" class="link-dark text-decoration-none " title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+    <a href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <a href="#">
         <i class="fa-solid fa-circle"></i>
     </a>
-    <a href="dashboard.php" class="active" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">          
+    <a href="#">          
         <i class="fa-solid fa-home"></i>
     </a>
-    <a href="" class="active" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">          
+    <a href="#">          
         <i class="fa-solid fa-gears"></i>
     </a>
 </div>
+<!-- Content -->
 <div class="content">
     <div class="upperContainer">
         <div class="firstContainer">
-            <a href="" class="settings"><i class="fas fa-bars"></i></a>
             <form>
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search for anything">
@@ -117,7 +121,7 @@
         </div>   
     </div>
     
-    <!-- graph section  -->
+    <!-- Graph  -->
     <div class="bottomContainer row d-xl-flex d-lg-block d-md-block d-sm-block d-block justify-content-between">
         <div class="learningCotaniner col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12 gap-xp-4">
             <div class="container">
