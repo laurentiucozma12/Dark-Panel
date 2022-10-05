@@ -1,5 +1,12 @@
 // Sidebar
-
+var menu_btn = document.querySelector("#menu-btn");
+var sidebar = document.querySelector("#sidebar");
+var content = document.querySelector(".content");
+menu_btn.addEventListener("click", () => {
+  sidebar.classList.toggle("active-nav");
+  content.classList.toggle("active-cont");
+  menu_btn.classList.toggle("active-menu");
+});
 
 // Chart
 const ctx = document.getElementById('myChart').getContext('2d');

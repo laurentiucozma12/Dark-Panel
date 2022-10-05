@@ -17,64 +17,65 @@ body {
     padding: 0;
     margin: 0;
 }
+
 /* Sidebar */
-.sidebar { 
-    margin: 0;
-    padding: 0; 
-    width: 4.5rem;
-    background-color: var(--dark-gray);
+.side-navbar {
+    width: 200px;
+    height: 100%;
     position: fixed;
-    height: 100% ;
-    overflow: auto;
+    background-color: var(--dark-gray);
+    transition: 0.8s;
+    margin-left: -140px;
 }
-.sidebar a {
+.active-nav {
+    margin-left: 0;
+}
+.side-navbar .nav #menu-btn {
+    padding: 1.25rem;
+    font-size: 20pt !important;
+    color: var(--light-gray-2);
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
+    border-bottom: 3px solid var(--dark);
+    cursor: pointer;
 }
-.sidebar a i {
+.side-navbar .nav #menu-btn:hover {
+    color: white;
+    background-color: var(--gray);
+    transition: .8s;
+}
+.side-navbar .nav a i {
     font-size: 20pt !important;
 }
-.sidebar a i:hover {
-    color: var(--light-green);
-    transition: 0.8s;
+.side-navbar .nav .menu-buttons {
+    padding: 1rem 1rem;
+    font-size: 15pt !important;
+    color: var(--light-gray-2);
+    text-decoration: none;
+    border-bottom: 2px solid var(--dark);
 }
-.sidebar a .fa-circle {
-    font-size: 20pt !important;
-    border-radius: 50%;
+.side-navbar .nav .menu-buttons:hover {
+    color: white;
+    background-color: var(--gray);
+    transition: .8s;
 }
-.sidebar a .fa-circle:hover {
-    transition: 0.8s;
-}
-.sidebar .circleIcon, .sidebar a {
-    display: flex;
-    align-items: center;
-    height: 4.5rem;
-    color: transparent;
-}
-.sidebar a i {
-    border: 0 !important;
-    color: white !important;
-}
-.sidebar a i:hover {
-    color: var(--light-green) !important;
-    transition: 0.8s !important;
-}
+
 /* Content */
 .content {
     padding: 0 2rem 2rem 2rem;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    transition: all .5s;
-    margin-left: 70px !important;
+    transition: all .8s;    
+    margin-left: 60px;
+}
+.active-cont {
+    margin-left: 200px;
 }
 .upperContainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 1.25rem;
 }
 .upperContainer .firstContainer {
     display: flex;
@@ -107,7 +108,7 @@ body {
 .upperContainer .secondContainer .iconsContainer a i:hover {
     color: white;
     background-color: var(--gray);
-    transition: 0.8s;
+    transition: .8s;
 }
 .upperContainer .secondContainer .profile {
     margin: 0;
@@ -314,23 +315,78 @@ body {
         margin-bottom: 2rem;
     }
 }
-@media screen and (max-width: 992px) {
-    .sidebar {
-      width: 100%;
-      height: 4.5rem;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
+@media screen and (max-width: 991.99px) {
+    /* Sidebar */
+    .side-navbar {
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--dark-gray);
+        transition: 0.8s;
+        margin-left: 0;
+        margin-top: -150px;
     }
-    .sidebar a {
-        margin: 0 3rem;
+    .active-nav {
+        margin-top: 0;
+    }
+    .side-navbar .nav #menu-btn {
+        padding: 0;
+        font-size: 15pt !important;
+        color: var(--light-gray-2);
+        text-decoration: none;
+        border-bottom: 0;
+        cursor: pointer;
+        background-color: var(--dark-gray);
+        height: 50px;        
+        width: 180px;                
+        position: absolute;
+        top: 150px;
+    }
+    .active-menu {        
+        position: absolute;
+        top: -50px;
+    }
+    .side-navbar .nav #menu-btn:hover {
+        color: white;
+        background-color: var(--gray);
+        transition: .8s;
+    }
+    .side-navbar .nav a {  
+        height: 50px;
+        width: 180px;
+        border-right: 4px solid var(--dark);
+        border-bottom: 4px solid var(--dark);
+    }
+    .side-navbar .nav a i {     
+        margin-left: 1rem;
+        font-size: 13pt !important;
+    }
+    .side-navbar .nav .menu-buttons {
+        padding: 1rem 1rem;
+        font-size: 15pt !important;
+        color: var(--light-gray-2);
+        text-decoration: none;
+
+    }
+    .side-navbar .nav .menu-buttons:hover {
+        color: white;
+        background-color: var(--gray);
+        transition: .8s;
     }
     .content {
-        margin: 4rem 2rem 2rem 2rem !important;
-        padding: 0.25rem 0;
+        padding: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 50px !important;
     }
+    .active-cont {
+        margin-top: 200px !important;
+    }
+
+
+
     .upperContainer .secondContainer .profile .profileImg  {
         width: 2.5rem;
         margin-left: 0.75rem;

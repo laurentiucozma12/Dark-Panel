@@ -23,23 +23,27 @@
 </head>
 <body>
 <main>
+
 <!-- Sidebar -->
-<div class="sidebar">
-    <a href="#">
-        <i class="fas fa-bars"></i>
+<div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+  <ul class="nav d-flex flex-column">
+    <a class="active-menu d-flex justify-content-lg-between justify-content-center align-items-center" id="menu-btn">
+       Menu <i class="fas fa-bars"></i>
     </a>
-    <a href="#">
-        <i class="fa-solid fa-circle"></i>
+    <a class="d-flex justify-content-lg-between justify-content-center  align-items-center menu-buttons" href="">
+        Home<i class="fa-solid fa-home"></i>
     </a>
-    <a href="#">          
-        <i class="fa-solid fa-home"></i>
+    <a class="d-flex justify-content-lg-between justify-content-center  align-items-center menu-buttons" href="#">          
+        Settings<i class="fa-solid fa-gears"></i>
     </a>
-    <a href="#">          
-        <i class="fa-solid fa-gears"></i>
+    <a class="d-flex justify-content-lg-between justify-content-center  align-items-center menu-buttons" href="#">          
+        Signout<i class="fa-solid fa-gears"></i>
     </a>
+  </ul>
 </div>
+
 <!-- Content -->
-<div class="content">
+<div class="content active-cont">
     <div class="upperContainer">
         <div class="firstContainer">
             <form>
