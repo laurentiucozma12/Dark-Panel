@@ -1,12 +1,10 @@
-// Sidebar
-var menu_btn = document.querySelector("#menu-btn");
-var sidebar = document.querySelector("#sidebar");
-var content = document.querySelector(".content");
-menu_btn.addEventListener("click", () => {
-  sidebar.classList.toggle("active-nav");
-  content.classList.toggle("active-cont");
-  menu_btn.classList.toggle("active-menu");
-});
+// Side-navbar
+function toggle() {
+    var side_navbar = document.querySelector("#side_navbar");
+    var content = document.querySelector(".content");
+    side_navbar.classList.toggle("active-nav");
+    content.classList.toggle("active-cont");
+}
 
 // Chart
 const ctx = document.getElementById('myChart').getContext('2d');

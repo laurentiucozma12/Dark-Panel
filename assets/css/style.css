@@ -18,7 +18,7 @@ body {
     margin: 0;
 }
 
-/* Sidebar */
+/* Side-navbar */
 .side-navbar {
     width: 200px;
     height: 100%;
@@ -58,7 +58,6 @@ body {
     background-color: var(--gray);
     transition: .8s;
 }
-
 /* Content */
 .content {
     padding: 0 2rem 2rem 2rem;
@@ -107,7 +106,6 @@ body {
 }
 .upperContainer .secondContainer .iconsContainer a i:hover {
     color: white;
-    background-color: var(--gray);
     transition: .8s;
 }
 .upperContainer .secondContainer .profile {
@@ -316,7 +314,7 @@ body {
     }
 }
 @media screen and (max-width: 991.99px) {
-    /* Sidebar */
+    /* Side-navbar */
     .side-navbar {
         width: 100%;
         height: fit-content;
@@ -344,10 +342,6 @@ body {
         position: absolute;
         top: 150px;
     }
-    .active-menu {        
-        position: absolute;
-        top: -50px;
-    }
     .side-navbar .nav #menu-btn:hover {
         color: white;
         background-color: var(--gray);
@@ -359,16 +353,11 @@ body {
         border-right: 4px solid var(--dark);
         border-bottom: 4px solid var(--dark);
     }
-    .side-navbar .nav a i {     
-        margin-left: 1rem;
-        font-size: 13pt !important;
-    }
     .side-navbar .nav .menu-buttons {
         padding: 1rem 1rem;
         font-size: 15pt !important;
         color: var(--light-gray-2);
         text-decoration: none;
-
     }
     .side-navbar .nav .menu-buttons:hover {
         color: white;
@@ -379,14 +368,25 @@ body {
         padding: 0;
         margin-left: 2rem;
         margin-right: 2rem;
-        margin-top: 50px !important;
+        margin-top: 2rem !important;
     }
     .active-cont {
-        margin-top: 200px !important;
+        margin-top: calc(150px + 2rem) !important;
     }
-
-
-
+    .upperContainer {        
+        padding-top: 0 !important;
+    }
+    .upperContainer .firstContainer form #mobil-menu-btn {
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+    .upperContainer .firstContainer form #mobil-menu-btn i {        
+        font-size: 20pt !important;
+    }
+    .upperContainer .firstContainer form #mobil-menu-btn i:hover {
+        color: white;
+        transition: .8s;
+    }
     .upperContainer .secondContainer .profile .profileImg  {
         width: 2.5rem;
         margin-left: 0.75rem;
@@ -402,13 +402,17 @@ body {
 
 }
 @media screen and (max-width: 576px) {
-    .sidebar {
+    .side-navbar {
         overflow-y: hidden;
         overflow-x: hidden;
     }
     .content {
         margin-left: 1rem !important;
         margin-right: 1rem !important;
+        margin-top: 1 !important;        
+    }
+    .active-cont {
+        margin-top: calc(150px + 1rem) !important;
     }
     .middleBottomContainer .container {
         min-width: 100% !important;

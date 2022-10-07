@@ -24,19 +24,19 @@
 <body>
 <main>
 
-<!-- Sidebar -->
-<div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+<!-- Side-navbar -->
+<div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="side_navbar">
   <ul class="nav d-flex flex-column">
-    <a class="active-menu d-flex justify-content-lg-between justify-content-center align-items-center" id="menu-btn">
+    <a class="active-menu d-lg-flex d-none justify-content-lg-between align-items-center" id="menu-btn" onclick="toggle()">
        Menu <i class="fas fa-bars"></i>
     </a>
-    <a class="d-flex justify-content-lg-between justify-content-center  align-items-center menu-buttons" href="">
+    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">
         Home<i class="fa-solid fa-home"></i>
     </a>
-    <a class="d-flex justify-content-lg-between justify-content-center  align-items-center menu-buttons" href="#">          
+    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">          
         Settings<i class="fa-solid fa-gears"></i>
     </a>
-    <a class="d-flex justify-content-lg-between justify-content-center  align-items-center menu-buttons" href="#">          
+    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">          
         Signout<i class="fa-solid fa-gears"></i>
     </a>
   </ul>
@@ -45,9 +45,12 @@
 <!-- Content -->
 <div class="content active-cont">
     <div class="upperContainer">
-        <div class="firstContainer">
-            <form>
-                <i class="fas fa-search"></i>
+        <div class="firstContainer">            
+            <form class="d-flex">
+                <a class="mobile-active-menu d-flex d-lg-none" id="mobil-menu-btn" onclick="toggle()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <i class="fas fa-search d-flex justify-content-center"></i>
                 <input type="text" placeholder="Search for anything">
             </form>
         </div>
