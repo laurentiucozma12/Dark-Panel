@@ -47,6 +47,11 @@ input {
 input:focus {
     box-shadow: none !important;
 }
+.wrap .container {
+    width: 500px;
+    padding: 2rem 4rem;
+    background-color: var(--dark-gray) !important;
+}
 .wrap form .otherPage {
     margin-top: 1rem !important;
 }
