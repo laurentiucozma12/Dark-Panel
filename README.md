@@ -1,8 +1,9 @@
 # Dark-Panel
 ## Description
-- Work in progress.
-- Design almost done for the main page.
-
-## Upcoming updates:
-- A databse should be used
-- More pages to be added
+- Work in progress.    
+## Progress
+- [ ] Backend for admin page.
+- [ ] Backend for signup-login page.
+- [x] Design for the admin page.
+- [x] Design for the signup-login page.
+- [x] Design for the main page.
