@@ -27,7 +27,7 @@
 <div class="wrap">
     <div class="container d-flex justify-content-center">
         <div class="wrap col-12">
-        <h1>Signup</h1>
+        <h1 class="mb-4 text-center">Signup</h1>
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
