@@ -1,0 +1,122 @@
+:root {
+    --dark: #161616;
+    --dark-gray: #202020;
+    --gray: #313131;
+    --light-gray-1: #5e5e5e;
+    --light-gray-2: #9C9FAE;
+    --light-gray-3: #c2fcff;
+    --light-blue: #0EF1FF;
+    --light-green: #32AC1E;
+    --light-green-hover: #3ac924;
+}
+* {
+    box-sizing: border-box !important;
+}
+body {
+    background-color: var(--dark) !important;
+    padding: 0;
+    margin: 0;
+}
+main {
+    color: var(--light-gray-2);
+}
+
+/* Green Btn */
+.greenBtn {
+    min-width: fit-content;
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    background-color: var(--light-green);
+    padding: 1rem;
+    border: 0;
+    transition: 0.8s;
+    font-weight: 700;
+}
+.greenBtn:hover {
+    background-color: var(--light-green-hover);
+}
+
+/* Select */
+select {
+    width: fit-content !important;
+    height: 100% !important;
+    color: var(--dark) !important;
+    background-color: var(--light-gray-2) !important;
+    border: 2px solid var(--light-gray-2) !important;
+    border-radius: 0 !important;
+    font-weight: 700 !important;
+}
+select:focus {
+    transition: .3s;
+    color: var(--light-gray-2) !important;
+    background-color: var(--dark-gray) !important;
+    box-shadow: none !important;
+}
+
+/* Content */
+.content {
+    padding: 2rem;
+}
+.container {
+    padding: 1rem 0 !important;
+    margin: 0 !important;
+    margin-right: 0 !important;
+    min-width: 100%;
+}
+.container select {
+    height: fit-content;
+}
+.container .left-btns :nth-child(2) {
+    margin: 0 1rem;
+}
+.container .right-btns .greenBtn {
+    margin: 0 1rem;
+}
+.table {
+    border: 3px solid var(--gray) !important;
+    color: var(--light-gray-2) !important;
+}
+.table .edit-delete .fa-pen {
+    margin-right: .5rem;
+}
+@media screen and (max-width: 768px) {
+    /* Select */
+    select {
+        padding: 0 0.25rem !important;
+        font-size: 10pt !important;
+    }
+    .greenBtn {
+        height: 100%;
+        padding: 0.5rem;
+        font-size: 9pt;
+    }
+    .content {
+        padding: 1rem 0;
+    }
+    .container {
+        padding: 0.5rem;
+        font-size: 11pt;
+    }   
+    .container .left-btns :nth-child(1) {
+        padding-right: 2rem !important;
+    }
+    .container .left-btns :nth-child(2) {
+        margin: 0 .5rem;
+    } 
+    .container .right-btns .greenBtn {
+        margin: 0 .5rem;
+    }
+    table {
+        font-size: 9pt;        
+    }
+    .table .edit-delete {
+        padding: 0 !important;
+    }
+    .table .edit-delete i {
+        font-size: 10pt !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    
+}

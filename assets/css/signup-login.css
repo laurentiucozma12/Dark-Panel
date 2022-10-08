@@ -1,0 +1,52 @@
+:root {
+    --dark: #161616;
+    --dark-gray: #202020;
+    --gray: #313131;
+    --light-gray-1: #5e5e5e;
+    --light-gray-2: #9C9FAE;
+    --light-gray-3: #c2fcff;
+    --light-blue: #0EF1FF;
+    --light-green: #32AC1E;
+    --light-green-hover: #3ac924;
+}
+* {
+    box-sizing: border-box !important;
+}
+body {
+    background-color: var(--dark) !important;
+    padding: 0;
+    margin: 0;
+}
+main {
+    color: var(--light-gray-2);
+    padding: 4rem 0;
+}
+
+/* Green Btn */
+.greenBtn {
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    background-color: var(--light-green);
+    padding: .75rem 1.5rem;
+    border: 0;
+    transition: 0.8s;
+}
+.greenBtn:hover {
+    background-color: var(--light-green-hover);
+}
+
+/* Input */
+input {
+    border: 1px solid var(--light-gray-2) !important;
+    border-radius: 0 !important;
+    color: var(--light-gray-2) !important;
+    background-color: var(--gray) !important;
+    font-size: 12pt !important;
+}
+input:focus {
+    box-shadow: none !important;
+}
+.wrap form .otherPage {
+    margin-top: 1rem !important;
+}

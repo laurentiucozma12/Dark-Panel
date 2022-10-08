@@ -18,6 +18,20 @@ body {
     margin: 0;
 }
 
+/* Green Btn */
+.greenBtn {
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    background-color: var(--light-green);
+    padding: 1rem;
+    border: 0;
+    transition: 0.8s;
+}
+.greenBtn:hover {
+    background-color: var(--light-green-hover);
+}
+
 /* Side-navbar */
 .side-navbar {
     width: 200px;
@@ -66,6 +80,7 @@ body {
     height: 100vh;
     transition: all .8s;    
     margin-left: 60px;
+    color: var(--light-gray-2);
 }
 .active-cont {
     margin-left: 200px;
@@ -141,16 +156,9 @@ body {
     margin-bottom: 0;
     font-weight: 500 !important;
 }
-.middleUpperContainer .container .secondContainer button {
-    color: white;
-    background-color: var(--light-green);
-    border: 0px;
+.middleUpperContainer .container .secondContainer .greenBtn {
+    padding: 1rem;
     font-weight: 600;
-    padding: 0.75rem 1rem;
-}
-.middleUpperContainer .container .secondContainer button:hover {
-    background-color: var(--light-green-hover);
-    transition: 0.8s;
 }
 .middleBottomContainer {
     margin-bottom: 2rem;
@@ -295,18 +303,8 @@ body {
 .bottomContainer .transferContainer .btnContainer {    
     width: 100%;
 }
-.bottomContainer .transferContainer .btnContainer button {
+.bottomContainer .transferContainer .btnContainer .greenBtn {    
     width: 100%;
-    font-size: 12pt;
-    font-weight: 500;
-    color: white;
-    background-color: var(--light-green);
-    padding: 1rem 0;
-    border: 0;
-}
-.bottomContainer .transferContainer .btnContainer button:hover {
-    background-color: var(--light-green-hover);
-    transition: 0.8s;
 }
 @media screen and (max-width: 1199px) {
     .bottomContainer .transferContainer .btnContainer {    
@@ -324,10 +322,10 @@ body {
         background-color: var(--dark-gray);
         transition: 0.8s;
         margin-left: 0;
-        margin-top: -150px;
+        margin-top: 0;
     }
     .active-nav {
-        margin-top: 0;
+        margin-top: -150px;
     }
     .side-navbar .nav #menu-btn {
         padding: 0;
@@ -367,11 +365,11 @@ body {
     .content {
         padding: 0;
         margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 2rem !important;
+        margin-right: 2rem;        
+        margin-top: calc(150px + 2rem) !important;
     }
     .active-cont {
-        margin-top: calc(150px + 2rem) !important;
+        margin-top: 2rem !important;
     }
     .upperContainer {        
         padding-top: 0 !important;
