@@ -41,7 +41,7 @@
                     Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                 </div>
             </div>
-            <button type="submit" class="greenBtn">Submit</button>
+            <button type="submit" class="greenBtn">Login</button>
             <br>
             <div class="otherPage">
                 <a href="<?php echo WEB; ?>/app/pages/signup.php">Dont have an account? Go to signup.</a>

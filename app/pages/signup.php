@@ -48,7 +48,7 @@
                     Passwords must be the same  
                 </div>
             </div>
-            <button type="submit" class="greenBtn">Submit</button>
+            <button type="submit" class="greenBtn">Signup</button>
             <br>
             <div class="otherPage">
                 <a href="<?php echo WEB; ?>/app/pages/login.php">Already have an account? Go to login.</a>
