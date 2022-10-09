@@ -87,8 +87,12 @@
                 <th scope="col">Price</th>
                 <th scope="col">
                     <div class="edit-delete d-flex">
-                        <i class="fas fa-pen fa-xs"></i>
-                        <i class="fas fa-trash fa-xs"></i>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-pen fa-xs"></i>                            
+                        </a>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-trash fa-xs"></i>
+                        </a>
                     </div>
                 </th>
             </tr>
@@ -104,8 +108,12 @@
                 <td>$$$</td>
                 <td>
                     <div class="edit-delete d-flex">
-                        <i class="fas fa-pen fa-xs"></i>
-                        <i class="fas fa-trash fa-xs"></i>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-pen fa-xs"></i>                            
+                        </a>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-trash fa-xs"></i>
+                        </a>
                     </div>
                 </td>
             </tr>
@@ -119,8 +127,12 @@
                 <td>$$$</td>
                 <td>
                     <div class="edit-delete d-flex">
-                        <i class="fas fa-pen fa-xs"></i>
-                        <i class="fas fa-trash fa-xs"></i>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-pen fa-xs"></i>                            
+                        </a>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-trash fa-xs"></i>
+                        </a>
                     </div>
                 </td>
             </tr>
@@ -134,8 +146,12 @@
                 <td>$$$</td>
                 <td>
                     <div class="edit-delete d-flex">
-                        <i class="fas fa-pen fa-xs"></i>
-                        <i class="fas fa-trash fa-xs"></i>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-pen fa-xs"></i>                            
+                        </a>
+                        <a href="" class="mt-auto mb-auto">
+                            <i class="fas fa-trash fa-xs"></i>
+                        </a>
                     </div>
                 </td>
             </tr>
