@@ -145,7 +145,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.middleUpperContainer .container .firstContainer h1 { 
+h1 { 
     background: -webkit-linear-gradient(left, var(--light-green), var(--light-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
