@@ -374,14 +374,15 @@ body {
     .upperContainer {        
         padding-top: 0 !important;
     }
-    .upperContainer .firstContainer form #mobil-menu-btn {
+    #mobil-menu-btn {
         text-decoration: none;
         margin-right: 1rem;
     }
-    .upperContainer .firstContainer form #mobil-menu-btn i {        
+    #mobil-menu-btn i {        
         font-size: 20pt !important;
+        color: var(--light-gray-2);
     }
-    .upperContainer .firstContainer form #mobil-menu-btn i:hover {
+    #mobil-menu-btn i:hover {
         color: white;
         transition: .8s;
     }

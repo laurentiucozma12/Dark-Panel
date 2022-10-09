@@ -8,6 +8,7 @@
     <title>Dark Panel</title>
     
     <!-- CSS -->
+    <link href="<?php echo WEB; ?>/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo WEB; ?>/assets/css/users.css" rel="stylesheet" type="text/css">
     <link href="<?php echo WEB; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
 
@@ -24,9 +25,32 @@
 </head>
 <body>
 <main>
+<!-- Side-navbar -->
+<div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="side_navbar">
+  <ul class="nav d-flex flex-column">
+    <a class="active-menu d-lg-flex d-none justify-content-lg-between align-items-center" id="menu-btn" onclick="toggle()">
+        Menu <i class="fas fa-bars"></i>
+    </a>
+    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">
+        Home<i class="fa-solid fa-home"></i>
+    </a>
+    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">          
+        Settings<i class="fa-solid fa-gears"></i>
+    </a>
+    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">          
+        Signout<i class="fa-solid fa-gears"></i>
+    </a>
+  </ul>
+</div>
+
 <!-- Content -->
-<div class="content">
-    <h1>Data Table</h1>
+<div class="content active-cont">
+    <div class="d-flex">
+        <a class="mobile-active-menu d-flex d-lg-none mt-auto mb-auto" id="mobil-menu-btn" onclick="toggle()">
+            <i class="fas fa-bars"></i>
+        </a>
+        <h1 class="mb-0">Data Table</h1>
+    </div>    
     <div class="container d-flex justify-content-between">
         <div class="left-btns d-flex align-items-center">
             <select class="form-select" name="proportions" id="">
@@ -132,7 +156,7 @@
 
 <!-- ChartJs -->
 <script src="<?php echo WEB; ?>/assets/js/chartJs-v3.9.1.js"></script>
-<!-- <script src="<?php echo WEB; ?>/assets/js/functions.js"></script> -->
+<script src="<?php echo WEB; ?>/assets/js/functions.js"></script>
 
 </body>
 </html>
