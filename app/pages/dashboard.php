@@ -28,7 +28,7 @@
 <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="side_navbar">
   <ul class="nav d-flex flex-column">
     <a class="active-menu d-lg-flex d-none justify-content-lg-between align-items-center" id="menu-btn" onclick="toggle()">
-        Menu <i class="fas fa-bars"></i>
+        Menu<i class="fas fa-bars"></i>
     </a>
     <a class="d-flex justify-content-between align-items-center menu-buttons" href="">
         Home<i class="fa-solid fa-home"></i>
@@ -137,13 +137,13 @@
                     <form action="">
                         <label for="compare">Compare with</label>
                         <select name="period" id="compare">
-                            <option value="lastmonsth">Last Week</option>
-                            <option value="lastmonsth">Last Month</option>
-                            <option value="lastmonsth">Last 3 Months</option>
-                            <option value="lastmonsth">Last 6 Months</option>
-                            <option value="lastmonsth">Last Year</option>
-                            <option value="lastmonsth">Last 5 Years</option>
-                            <option value="lastmonsth">All time</option>
+                            <option value="0">Last Week</option>
+                            <option value="1">Last Month</option>
+                            <option value="2">Last 3 Months</option>
+                            <option value="3">Last 6 Months</option>
+                            <option value="4">Last Year</option>
+                            <option value="5">Last 5 Years</option>
+                            <option value="6">All time</option>
                         </select>
                     </form>
                     <div>
@@ -151,41 +151,41 @@
                     </div>
                 </div>                                        
             </div>             
-                <canvas id="myChart" class="chartBox" width="400" height="200"></canvas>  
+            <canvas id="myChart" class="chartBox" width="400" height="200"></canvas>  
         </div>   
-        <div class="transferContainer col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="transferContainer col-xl-4 col-12">
             <div class="container row d-flex justify-content-between gap-3">                
-                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="smallContainerOne col-sm-4 col-12">
                     <div class="smallContainerTwo">
                         <a href=""><i class="fa-regular fa-clone"></i></a>
                         <h5>Courses</h5>
                     </div>
                 </div>
-                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="smallContainerOne col-sm-4 col-12">
                     <div class="smallContainerTwo">
                         <a href=""><i class="fa-regular fa-star"></i></a>
                         <h5>Favorites</h5>
                     </div>
                 </div>
-                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="smallContainerOne col-sm-4 col-12">
                     <div class="smallContainerTwo">
                         <a href=""><i class="fa-solid fa-earth-americas"></i></a>
                         <h5>Explore</h5>
                     </div>
                 </div>
-                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="smallContainerOne col-sm-4 col-12">
                     <div class="smallContainerTwo">
                         <a href=""><i class="fa-solid fa-bell"></i></a>
                         <h5>Notifications</h5>
                     </div>
                 </div>
-                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="smallContainerOne col-sm-4 col-12">
                     <div class="smallContainerTwo">
                         <a href=""><i class="fa-solid fa-triangle-exclamation"></i></a>
                         <h5>Alert</h5>
                     </div>
                 </div>
-                <div class="smallContainerOne col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="smallContainerOne col-sm-4 col-12">
                     <div class="smallContainerTwo">
                         <a href=""><i class="fa-solid fa-lightbulb"></i></a>
                         <h5>Tips</h5>
