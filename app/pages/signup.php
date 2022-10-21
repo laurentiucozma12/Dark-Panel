@@ -8,11 +8,11 @@
     <title>Dark Panel</title>
     
     <!-- CSS -->
-    <link href="<?php echo WEB; ?>/assets/css/signup-login.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo WEB; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/signup-login.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap CSS -->
-    <link href="<?php echo WEB; ?>/assets/css/bootstrap-v5.0.2.css" rel="stylesheet"></head>
+    <link href="<?php echo WEB_PATH; ?>/assets/css/bootstrap-v5.0.2.css" rel="stylesheet"></head>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
             <button type="submit" class="greenBtn">Signup</button>
             <br>
             <div class="otherPage">
-                <a href="<?php echo WEB; ?>/app/pages/login.php">Already have an account? Go to login.</a>
+                <a href="<?php echo WEB_PATH; ?>/app/pages/login.php">Already have an account? Go to login.</a>
             </div>
         </form>
         </div>        
@@ -62,14 +62,14 @@
     <!-- <div class="copyright">© 2022 Copyright of Laurentiu Ioan Cozma</div> -->
 </footer>
 <!-- Ajax jQuery -->
-<script src="<?php echo WEB; ?>/assets/js/jQuery-v3.6.0.js"></script>
+<script src="<?php echo WEB_PATH; ?>/assets/js/jQuery-v3.6.0.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="<?php echo WEB; ?>/assets/js/bootstrap-v5.0.2.js"></script>
+<script src="<?php echo WEB_PATH; ?>/assets/js/bootstrap-v5.0.2.js"></script>
 
 <!-- ChartJs -->
-<script src="<?php echo WEB; ?>/assets/js/chartJs-v3.9.1.js"></script>
-<!-- <script src="<?php echo WEB; ?>/assets/js/functions.js"></script> -->
+<script src="<?php echo WEB_PATH; ?>/assets/js/chartJs-v3.9.1.js"></script>
+<!-- <script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script> -->
 
 </body>
 </html>

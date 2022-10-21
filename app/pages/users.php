@@ -1,5 +1,5 @@
 <?php include '../../app/config/config.php';?>
-<?php include '../../app/config/connect.php';?>
+<?php include ROOT_PATH.'/app/config/connect.php';?>
 
 <!DOCTYPE html>
 <html>
@@ -8,12 +8,12 @@
     <title>Dark Panel</title>
     
     <!-- CSS -->
-    <link href="<?php echo WEB; ?>/assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo WEB; ?>/assets/css/users.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo WEB; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/users.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap CSS -->
-    <link href="<?php echo WEB; ?>/assets/css/bootstrap-v5.0.2.css" rel="stylesheet"></head>
+    <link href="<?php echo WEB_PATH; ?>/assets/css/bootstrap-v5.0.2.css" rel="stylesheet"></head>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,22 +26,7 @@
 <body>
 <main>
 <!-- Side-navbar -->
-<div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="side_navbar">
-  <ul class="nav d-flex flex-column">
-    <a class="active-menu d-lg-flex d-none justify-content-lg-between align-items-center" id="menu-btn" onclick="toggle()">
-        Menu <i class="fas fa-bars"></i>
-    </a>
-    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">
-        Home<i class="fa-solid fa-home"></i>
-    </a>
-    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">          
-        Settings<i class="fa-solid fa-gears"></i>
-    </a>
-    <a class="d-flex justify-content-between align-items-center menu-buttons" href="">          
-        Signout<i class="fa-solid fa-gears"></i>
-    </a>
-  </ul>
-</div>
+<?php include ROOT_PATH."/assets/elements/sidebar.php" ?>
 
 <!-- Content -->
 <div class="content active-cont">
@@ -165,14 +150,14 @@
     <!-- <div class="copyright">© 2022 Copyright of Laurentiu Ioan Cozma</div> -->
 </footer>
 <!-- Ajax jQuery -->
-<script src="<?php echo WEB; ?>/assets/js/jQuery-v3.6.0.js"></script>
+<script src="<?php echo WEB_PATH; ?>/assets/js/jQuery-v3.6.0.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="<?php echo WEB; ?>/assets/js/bootstrap-v5.0.2.js"></script>
+<script src="<?php echo WEB_PATH; ?>/assets/js/bootstrap-v5.0.2.js"></script>
 
 <!-- ChartJs -->
-<script src="<?php echo WEB; ?>/assets/js/chartJs-v3.9.1.js"></script>
-<script src="<?php echo WEB; ?>/assets/js/functions.js"></script>
+<script src="<?php echo WEB_PATH; ?>/assets/js/chartJs-v3.9.1.js"></script>
+<script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script>
 
 </body>
 </html>
