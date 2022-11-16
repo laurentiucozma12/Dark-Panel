@@ -157,6 +157,8 @@
 
 <!-- ChartJs -->
 <script src="<?php echo WEB_PATH; ?>/assets/js/chartJs-v3.9.1.js"></script>
+
+<!-- Functions -->
 <script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script>
 
 </body>

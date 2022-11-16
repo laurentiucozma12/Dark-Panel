@@ -1,5 +1,5 @@
 <?php include '../../app/config/config.php';?>
-<?php include '../../app/config/connect.php';?>
+<?php include ROOT_PATH.'/app/config/connect.php';?>
 
 <!DOCTYPE html>
 <html>
@@ -8,8 +8,9 @@
     <title>Dark Panel</title>
     
     <!-- CSS -->
-    <link href="<?php echo WEB_PATH; ?>/assets/css/signup-login.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo WEB_PATH; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/register-login.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap CSS -->
     <link href="<?php echo WEB_PATH; ?>/assets/css/bootstrap-v5.0.2.css" rel="stylesheet"></head>
@@ -44,7 +45,7 @@
             <button type="submit" class="greenBtn">Login</button>
             <br>
             <div class="otherPage">
-                <a href="<?php echo WEB_PATH; ?>/app/pages/signup.php">Dont have an account? Go to signup.</a>
+                <a href="<?php echo WEB_PATH; ?>/app/pages/register.php">Dont have an account? Go to register.</a>
             </div>
         </form>
         </div>        
@@ -62,7 +63,9 @@
 
 <!-- ChartJs -->
 <script src="<?php echo WEB_PATH; ?>/assets/js/chartJs-v3.9.1.js"></script>
-<!-- <script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script> -->
+
+<!-- Functions -->
+<script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script>
 
 </body>
 </html>

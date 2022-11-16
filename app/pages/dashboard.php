@@ -1,5 +1,5 @@
 <?php include '../../app/config/config.php';?>
-<?php include '../../app/config/connect.php';?>
+<?php include ROOT_PATH.'/app/config/connect.php';?>
 
 <!DOCTYPE html>
 <html>
@@ -196,6 +196,7 @@
 <!-- ChartJs -->
 <script src="<?php echo WEB_PATH; ?>/assets/js/chartJs-v3.9.1.js"></script>
 
+<!-- Functions -->
 <script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script>
 
 </body>

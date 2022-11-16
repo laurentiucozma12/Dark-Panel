@@ -1,5 +1,5 @@
 <?php include '../../app/config/config.php';?>
-<?php include '../../app/config/connect.php';?>
+<?php include ROOT_PATH.'/app/config/connect.php';?>
 
 <!DOCTYPE html>
 <html>
@@ -8,8 +8,9 @@
     <title>Dark Panel</title>
     
     <!-- CSS -->
-    <link href="<?php echo WEB_PATH; ?>/assets/css/signup-login.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo WEB_PATH; ?>/assets/css/font.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo WEB_PATH; ?>/assets/css/register-login.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap CSS -->
     <link href="<?php echo WEB_PATH; ?>/assets/css/bootstrap-v5.0.2.css" rel="stylesheet"></head>
@@ -27,7 +28,7 @@
 <div class="wrap">
     <div class="container d-flex justify-content-center">
         <div class="wrap col-12">
-        <h1 class="mb-4 text-center">Signup</h1>
+        <h1 class="mb-4 text-center">Register</h1>
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -48,7 +49,7 @@
                     Passwords must be the same  
                 </div>
             </div>
-            <button type="submit" class="greenBtn">Signup</button>
+            <button type="submit" class="greenBtn">Register</button>
             <br>
             <div class="otherPage">
                 <a href="<?php echo WEB_PATH; ?>/app/pages/login.php">Already have an account? Go to login.</a>
@@ -69,7 +70,9 @@
 
 <!-- ChartJs -->
 <script src="<?php echo WEB_PATH; ?>/assets/js/chartJs-v3.9.1.js"></script>
-<!-- <script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script> -->
+
+<!-- Functions -->
+<script src="<?php echo WEB_PATH; ?>/assets/js/functions.js"></script>
 
 </body>
 </html>

@@ -8,10 +8,10 @@
           Home<i class="fa-solid fa-home"></i>
       </a>
       <a class="d-flex justify-content-between align-items-center menu-buttons" href="login.php">          
-          Login Page<i class="fa-solid fa-gears"></i>
+          Login Page<i class="fa-solid fa-right-to-bracket"></i>
       </a>
-      <a class="d-flex justify-content-between align-items-center menu-buttons" href="signup.php">          
-          Signup Page<i class="fa-solid fa-gears"></i>
+      <a class="d-flex justify-content-between align-items-center menu-buttons" href="register.php">          
+          Register Page<i class="fa-solid fa-registered"></i>
       </a>
       <a class="d-flex justify-content-between align-items-center menu-buttons" href="users.php">          
           Users Page<i class="fa-solid fa-gears"></i>
