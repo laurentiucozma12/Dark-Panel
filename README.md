@@ -1,4 +1,14 @@
-# Dark Panel Preview
+# Dark-Panel
+## Description
+- Work in progress.    
+## Progress
+- [ ] Backend for admin page.
+- [ ] Backend for dashboard page.
+- [ ] Backend for signup-login page.
+- [x] Design for the admin page.
+- [x] Design for the signup-login page.
+- [x] Design for the dashboard page.  
+# Preview
 ## Dashboard
 ### Dekstop Size
 ![dashboard_desktop](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/dashboard_desktop.png)  
