@@ -1,7 +1,16 @@
 # Dark Panel Preview
-![1](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/1.png)     
-![2](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/2.png)     
-![3](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/3.png)     
-![4](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/4.png)     
-![5](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/5.png)     
-![6](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/6.png)     
+## Dashboard
+### Dekstop Size
+![dashboard_desktop](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/dashboard_desktop.png)  
+### Phone size   
+![dashboard_phone1](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/dashboard_phone1.png)     
+![dashboard_phone2](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/dashboard_phone2.png)    
+### Responsive sidebar-navbar 
+![responsive_sidebar_navbar](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/responsive_sidebar_navbar.png)     
+## Login and Register pages (they are 2 separate files)
+![login_register_pages](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/login_register_pages.png)     
+## Admin Page
+### Desktop Size
+![admin_page_desktop](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/admin_page_desktop.png)   
+### Phone Size  
+![admin_page_phone](https://github.com/laurentiucozma12/Dark-Panel/blob/master/projectPreview/admin_page_phone.png)     
